@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form-1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-content: center;
+            background: linear-gradient(to right, #da4453, #89216b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .parent{
+            height: 70vh;
+            width: 30vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: white;
+        }
+        h1{
+            font-size: auto;
+            text-align: left;
+        }
+        form{
+            height: 80%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .child1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        label{
+            font-size: auto;
+        }
+        .box{
+            height: 40px;
+            width: 100%;
+            outline: none;
+            border: none;
+            box-shadow: 0px 0px 5px -2px;
+        }
+        .child2{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .box1{
+            width: 94%;
+        }
+        .radio{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        select{
+            height: 40px;
+            width: 100%;
+            border: none;
+            box-shadow: 0px 0px 7px -2px;
+        }
+        button{
+            height: 40px;
+            width: 35%;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(45, 45, 204);
+            color: white;
+        }
+        .radio_naam{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 1px;
+        }
+        .ab{
+            display: flex;
+            flex-direction: row;
+        }
+        @media screen and (min-width:375px) and (max-width:750px) {
+            h1{
+                font-size: 16px;
+                text-align: center;
+            }
+            .child1{
+                flex-direction: column;
+            }
+            .child2{
+                flex-direction: column;
+            }
+            .box{
+                height: 20px;
+                width: 100%;
+            }
+            .box1{
+                width: 100%;
+            }
+            .radio_naam{
+                flex-direction: column;
+            }
+            label{
+                font-size: 12px;
+            }
+            select{
+                height: 20px;
+            }
+            button{
+                width: 50%;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <form action="">
+            <h1>Registration Form</h1>
+            <div class="child1">
+                <div class="first">
+                    <label>First Name</label>
+                    <input type="text" class="box">
+                </div>
+                <div class="last">
+                    <label>Last Name</label>
+                    <input type="text" class="box">
+                </div>
+            </div>
+            <div class="child2">
+                <div class="birthday">
+                    <label>Birthday</label>
+                    <input type="date" name="" id="" class="box box1">
+                </div>
+                <div class="radio">
+                    <label class="label1">Gender</label>
+                    <div class="radio_naam">
+                        <div class="ab">
+                            <input type="radio" name="Gender" id="">
+                            <label class="rad_font">Male</label>
+                        </div>
+                        <div class="ab">
+                            <input type="radio" name="Gender" id="">
+                            <label class="rad_font">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="child3">
+                <div class="email">
+                    <label>Email</label>
+                    <input type="email" class="box">
+                </div>
+                <div class="phone">
+                    <label>Phone Number</label>
+                    <input type="tel" class="box">
+                </div>
+            </div>
+            <div class="subject">
+                <label for="Subject">Subject</label>
+                <select name="Subject">
+                    <option value="Subject">Choose an Option</option>
+                    <option value="Subject">HTML</option>
+                    <option value="Subject">CSS</option>
+                    <option value="Subject">BOOTSTRAP</option>
+                    <option value="Subject">JAVA SCRIPT</option>
+                    <option value="Subject">JAVA</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
